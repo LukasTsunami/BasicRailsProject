@@ -5,12 +5,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
-gem 'aasm'
 gem 'bootsnap', '>= 1.1.0', require: false
-gem 'everett'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.3'
+gem "loofah", ">= 2.3.1"
 
 group :development, :test do
   gem 'factory_bot_rails'
